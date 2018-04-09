@@ -21,8 +21,8 @@ if [ "$exportado" = "CIA"  ]; then
 	fi
   echo -e "\e[1;31mCreando cia...\e[0m"
   '../../binarios/3dstool' -ctf cxi parcheado.cxi --header '../../temp/original/ncchheader.bin' --exh '../../temp/original/exheader.bin' --logo '../../temp/original/logo.bcma.lz' --plain '../../temp/original/plain.bin' --exefs exefs.bin --romfs romfs.bin
-  '../../binarios/makerom' -f cia -o "$USER_PWD/rom/juego$REGION.cia" -content parcheado.cxi:0:0
+  '../../binarios/makerom' -f cia -o "$USER_PWD/rom/$GAME ESP - $REGION.cia" -content parcheado.cxi:0:0
   cd ../..
-  echo "Se ha exportado el juego$REGION.cia parcheado con la traducción dentro de la carpeta rom :D"
+  echo "Se ha exportado el $GAME ESP - $REGION.cia parcheado con la traducción dentro de la carpeta rom :D"
   echo "Disfruta del juego y de la traducción ^^"
   

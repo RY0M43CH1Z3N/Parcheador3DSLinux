@@ -17,14 +17,14 @@ elif [ "$exportado" = "LUMA" ]; then
   cd ..
   #Comprobando la región
   if [[ "$REGION" = "USA" ]]; then
-    mkdir -p "SD/luma/titles/$USA/foldersample"
+    mkdir -p "SD/luma/titles/$USA/romfs/foldersample"
     cp "../parches/code.ips" "SD/luma/titles/$USA/code.ips"
     cp "extraido/romfs/filesample" "SD/luma/titles/$USA/romfs/filesample"
     cp -r "SD/luma" "$USER_PWD/rom/luma"
   else
-    mkdir -p "SD/luma/titles/$EUR/foldersample"
+    mkdir -p "SD/luma/titles/$EUR/romfs/foldersample"
     cp "../parches/code.ips" "SD/luma/titles/$EUR/codepatchsample.ips"
-    cp "extraido/romfs/layout/ui_Achieve.arc" "SD/luma/titles/$EUR/romfs/filesample"
+    cp "extraido/romfs/filesample" "SD/luma/titles/$EUR/romfs/filesample"
     cp -r "SD/luma" "$USER_PWD/rom/luma"
   fi
 echo "Se ha creado el parche para luma, copia la carpeta luma que está en la carpeta rom a la raiz de la SD."

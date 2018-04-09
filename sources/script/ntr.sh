@@ -26,7 +26,13 @@ elif [ "$exportado" = "NTR" ]; then
 	mkdir -p "SD/luma/titles/$EUR"
 	cp "../parches/code.ips" "SD/luma/titles/$EUR/code.ips"
   fi
+  #Comprobando si existe la carpeta
+  if [ ! -d "$USER_PWD/rom/SDNTR" ]; then
   mkdir "$USER_PWD/rom/SDNTR"
+  else
+  rm -Rf "$USER_PWD/rom/SDNTR"
+   mkdir "$USER_PWD/rom/SDNTR"
+  fi
   cp -r "SD/luma" "$USER_PWD/rom/SDNTR/luma"
   cp -r "SD/lordesp" "$USER_PWD/rom/SDNTR/sample"
   cp -r "SD/plugin" "$USER_PWD/rom/SDNTR/plugin"
