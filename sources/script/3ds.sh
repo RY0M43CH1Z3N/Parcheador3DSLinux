@@ -21,8 +21,8 @@ elif [ "$exportado" = "3DS" ]; then
 	fi
   echo -e "\e[1;31mCreando 3DS...\e[0m"
   '../../binarios/3dstool' -ctf cxi parcheado.cxi --header '../../temp/original/ncchheader.bin' --exh '../../temp/original/exheader.bin' --logo '../../temp/original/logo.bcma.lz' --plain '../../temp/original/plain.bin' --exefs exefs.bin --romfs romfs.bin
-  '../../binarios/makerom' -f cci -o "$USER_PWD/rom/juego$REGION.3ds" -target t -i parcheado.cxi:0
+  '../../binarios/makerom' -f cci -o "$USER_PWD/rom/$GAME ESP - $REGION.3ds" -target t -i parcheado.cxi:0
   cd ../..
-  echo "Se ha exportado el juego$REGION.3ds parcheado con la traducción dentro de la carpeta rom :D"
+  echo "Se ha exportado el $GAME ESP - $REGION.3ds parcheado con la traducción dentro de la carpeta rom :D"
   echo "Disfruta del juego y de la traducción ^^"
   
