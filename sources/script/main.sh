@@ -14,7 +14,7 @@ echo -e "\e[1;36m #####  ######  ####  #    #    #    #    # #    # #    #  ####
 echo
 echo -e "\e[1;36m $GAME al español - $VERSION \e[0m";
 echo -e "\e[1;36m Traducido por $TEAM \e[0m";
-echo -e "\e[1;36m Versión del programa: 1.1 64 bits \e[0m";
+echo -e "\e[1;36m Versión del programa: 1.2 64 bits \e[0m";
 echo
 echo
 echo
@@ -32,12 +32,12 @@ echo
 case "$CXI" in
 *.cxi ) 
 		echo
-        echo "El dump es formato CXI, no necesita ningún parcheo previo para garantizar la compatibilidad del parche de traducción."
+        echo "El dump es formato CXI."
 		CXIPATCH=false
         ;;
 *.3ds ) 
 		echo
-		echo "El dump es formato 3DS, se aplicará un parche adicional para que funcione correctamente con el parche de traducción."
+		echo "El dump es formato 3DS."
 		CXIPATCH=true
 		;;
 *)
@@ -62,10 +62,10 @@ echo Has introducido un valor incorrecto, se saldrá del programa
 exit
 fi
 #variables de regiones
-USA=TITLEIDSAMPLE
-EUR=TITLEIDSAMPLE
+USA=0004000000164300
+EUR=0004000000165500
 echo
-echo ¿Cómo desea que el juego sea exportado?
+echo ¿Cómo desea exportar el juego?
 #echo Seleccione una opción: 3DS, CIA, HANS, LUMA, NTR
 echo
 echo -e "Seleccione una opción: \e[1;36m3DS\e[0m, \e[1;32mCIA\e[0m, \e[1;31mLUMA\e[0m o \e[1;33mNTR\e[0m"

@@ -1,19 +1,23 @@
 #!/bin/bash
 #Requisitos necesarios
-echo -e "Parcheador 3DS Linux versión 1.1 - Creado por Darkmet98."
-echo
-echo -e "Introduzca el nombre del juego traducido."
-read -p 'Juego traducido: ' GAME
-echo
-echo -e "Introduzca la versión del parche del juego traducido."
-read -p 'Versión: ' VERSION
-echo
-echo -e "Introduzca una abreviatura del juego (por ejemplo, STG)."
-read -p 'Abreviatura del juego: ' CODE
-echo
-echo -e "Introduzca el nombre del equipo que lo ha traducido."
-read -p 'Equipo que lo ha traducido: ' TEAM
-echo
+#echo -e "Parcheador 3DS Linux versión 1.1 - Creado por Darkmet98."
+#echo
+#echo -e "Introduzca el nombre del juego traducido."
+#read -p 'Juego traducido: ' GAME
+#echo
+#echo -e "Introduzca la versión del parche del juego traducido."
+#read -p 'Versión: ' VERSION
+#echo
+#echo -e "Introduzca una abreviatura del juego (por ejemplo, STG)."
+#read -p 'Abreviatura del juego: ' CODE
+#echo
+#echo -e "Introduzca el nombre del equipo que lo ha traducido."
+#read -p 'Equipo que lo ha traducido: ' TEAM
+#echo
+GAME='Lord Of Magna Maiden Heaven'
+VERSION='1.0'
+CODE='LOM'
+TEAM='GlowTranslations'
 
 #Creando carpetas necesarias y limpiando las viejas
 if [ ! -d "build" ]; then
